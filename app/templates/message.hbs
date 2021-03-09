@@ -1,6 +1,8 @@
 {{page-title "Message"}}
-<Textarea @value={{@model.text}}/>
+<Textarea @value={{@model.text}} @maxlength={{@model.MAX}}/>
 <div class="bs-alert alert-info">{{@model.size}} caractères</div>
-
+{{#if @model.isFull}}
+  <span class="badge badge-warning">Full</span>
+{{/if}}
 <button {{action "reset" @model}}>Reset</button>
 {{outlet}}

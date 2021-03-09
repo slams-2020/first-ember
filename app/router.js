@@ -11,4 +11,5 @@ Router.map(function () {
     this.route('message');
   });
   this.route('message');
+  this.route('testSuper');
 });

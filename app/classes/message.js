@@ -13,7 +13,7 @@ export default class Message {
     return this.text.length;
   }
 
-  get isFull(){
-
+  get isFull() {
+    return this.MAX <= this.size;
   }
 }
