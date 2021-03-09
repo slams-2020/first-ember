@@ -1,0 +1,7 @@
+{{page-title "Hello"}}
+<Input @value={{@model.message}}/>
+{{@model.message}} {{@model.to}}
+<button {{action "reset" @model}} class="btn btn-danger">Ré-initialiser</button>
+<LinkTo class="btn btn-primary" @route="hello.message">Messages</LinkTo>
+
+{{outlet}}

@@ -1,0 +1,6 @@
+{{page-title "Message"}}
+<Textarea @value={{@model.text}}/>
+<div class="bs-alert alert-info">{{@model.size}} caractères</div>
+
+<button {{action "reset" @model}}>Reset</button>
+{{outlet}}
